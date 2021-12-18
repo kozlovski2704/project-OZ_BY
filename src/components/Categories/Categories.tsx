@@ -42,8 +42,8 @@ export const Categories = () => {
     <div>
       {popularCategories.map((el: popularCategoriesMap) => {
         return (
-          <div className={css.CatrgoriesWrapper}>
-            <div className={css.CategoriesTitle}>
+          <div className={css.categoriesWrapper}>
+            <div className={css.categoriesTitle}>
               {el.category.label} 
             </div>
             <Row>
