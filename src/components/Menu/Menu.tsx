@@ -16,7 +16,7 @@ export const MenuCategories = () => {
 
   useEffect(() => {
     dispatch(MenuCategoriesActions.fetchMenuCategories({}))
-  })
+  },[])
 
   const categories = useSelector(MenuCategoriesSelectors.getCategories);
   const status = useSelector(MenuCategoriesSelectors.getCategoriesStatus)

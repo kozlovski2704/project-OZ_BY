@@ -1,4 +1,4 @@
-import css from './ProductPage.module.css'
+import css from './Product.module.css'
 import { useSelector, useDispatch } from "react-redux";
 import { GoodsSelectors, GoodsActions, CartActions, CartSelectors } from "../../store";
 import { useParams, useNavigate } from 'react-router-dom';
@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import { Button } from 'antd'
 
 
-export const ProductsPage = () => {
+export const Products = () => {
     const dispatch = useDispatch()
 
 

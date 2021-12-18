@@ -25,7 +25,7 @@ export const CategoriesPage = () => {
     useEffect(() => {
       dispatch(MenuCategoriesActions.fetchMenuCategories({ type }))
       dispatch(GoodsActions.fetchGoods({ type }))
-    }, [])
+    })
 
     const categories = useSelector(MenuCategoriesSelectors.getCategories);
     const goods = useSelector(GoodsSelectors.getGoods)

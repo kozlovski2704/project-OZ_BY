@@ -35,7 +35,7 @@ export const Categories = () => {
   
   useEffect(() => {
     dispatch(PopularCategoriesActions.fetchPopularCategories())
-  }, [])
+  })
 
   const popularCategories = useSelector(PopularCategoriesSelextors.getPopularCategories);
   return (

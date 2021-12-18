@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import { MainPage } from './MainPage'
 import { CategoriesPage } from './CategoriesPage'
-import { ProductsPage } from './ProductsPage'
+import { Products } from './Products'
 import { Footer } from './Footer'
 import { Header } from './Header'
 import { GoodsPage } from './GoodsPage'
@@ -16,7 +16,7 @@ export function App() {
       <Header />
       <Routes>
         <Route path="/" element={ <MainPage /> } />
-        <Route path="/product/:type/:id" element={ <ProductsPage /> } />
+        <Route path="/product/:type/:id" element={ <Products /> } />
         <Route path="/categories/:type" element={ <CategoriesPage /> } />
         <Route path="/goods" element={ <GoodsPage /> } />
       </Routes>
