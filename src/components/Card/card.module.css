@@ -1,0 +1,10 @@
+:global(.ant-col-6){
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+img {
+ width: 100px;
+ height: 300px; 
+}

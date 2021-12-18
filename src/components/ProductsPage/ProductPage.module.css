@@ -1,0 +1,41 @@
+.ProductWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.ProductInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.img {
+    width: 600px;
+    height: 450px;
+}
+
+.Info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.label {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.price {
+    font-size: 50px;
+    font-weight: 450;
+}
+
+.description {
+    font-size: 20px;
+}
