@@ -1,6 +1,6 @@
 import { CardProducts } from "../Card";
 import { useSelector, useDispatch } from "react-redux";
-import { PopularCategoriesSelextors, PopularCategoriesActions } from "../../store";
+import { PopularCategoriesSelextors, PopularCategoriesActions } from "/../store";
 import { Row, Col } from 'antd'
 import css from './Categories.module.css'
 import { useEffect } from "react";
