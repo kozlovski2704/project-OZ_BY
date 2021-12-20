@@ -1,11 +1,11 @@
 import { useEffect } from 'react'
 import { useSelector, useDispatch } from "react-redux";
-import { MenuCategoriesSelectors, MenuCategoriesActions } from "../../store";
+import { MenuCategoriesSelectors, MenuCategoriesActions } from "../../store/menuCategoriesSlice";
 import { Link } from "react-router-dom";
 import { Menu, Row, Col } from "antd";
 import css from "./Menu.module.css"
 
-interface categpriesMap {
+interface categoriesMap {
   id: string,
   type: string,
   label: string
@@ -24,12 +24,10 @@ export const MenuCategories = () => {
     <Row>
       <Col span={6}>
         <Menu mode="vertical">
-          {status === 'failure' && 'Something went wrong'}
-          {status === 'loading' && 'Loading list'}
-          {status === 'loaded' && categories.map((item: categpriesMap) => {
+          {status === 'loaded' && categories.map((item: categoriesMap) => {
             return (
               <Menu.Item key={item.id}>
-                <Link to={`/categories/${item.id}`}> {item.label} </Link>
+                <Link to={`/categories/${String(item.id)}`}> {item.label} </Link>
               </Menu.Item>
             )
           })}

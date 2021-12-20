@@ -1,7 +1,7 @@
 import { MenuCategories } from "../Menu";
 import { Categories } from "../Categories";
 
-export const MainPage = () => {
+export const HomePage = () => {
   return (
     <div>
       <MenuCategories />

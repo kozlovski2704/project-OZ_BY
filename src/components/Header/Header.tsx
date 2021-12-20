@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { Input, Badge } from 'antd'
-import { ShoppingOutlined, ShoppingCartOutlined } from "@ant-design/icons"
+import { Input, Badge, Button, Avatar } from 'antd'
+import { ShoppingOutlined, ShoppingCartOutlined, UserOutlined, } from "@ant-design/icons"
 import { useEffect } from 'react'
 import { useSelector, useDispatch } from "react-redux";
 import { CartSelectors, CartActions } from "../../store";
@@ -20,7 +20,6 @@ export const Header = () => {
     const cartOnClick = () => {
 
     }
-
     return (
         <div className={css.Header}>
             <div>
