@@ -15,6 +15,7 @@ export const GoodsPage = () => {
 
 
     return (
+        
         <Table dataSource={goods}>
             <Column 
                 title="Название" 

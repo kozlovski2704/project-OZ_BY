@@ -51,7 +51,6 @@ export const Products = () => {
         return <h1>"Продукт не найдена, вернуться" <button onClick={clickNavigate}>назад</button></h1>
     } else if (goodsStatus === 'loaded') {
         return (
-            <div className={css.ProductWrapper}>
                 <div className={css.ProductInfo}>
                     <div>
                         <img src={good.img} alt="ProductPhoto" className={css.img} />
@@ -71,7 +70,6 @@ export const Products = () => {
                         </div>
                     </div>
                 </div>
-            </div>
         )  
     }
 
